@@ -14,8 +14,8 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
-        html{
+
+        html {
             scroll-behavior: smooth;
         }
 
@@ -25,6 +25,14 @@
             color: #3500D3;
             font-family: "Poppins", sans-serif;
             ;
+        }
+
+        h1{
+            color: #3500D3;
+        }
+
+        h2{
+            color: #3500D3;
         }
 
         nav {
@@ -95,32 +103,22 @@
             cursor: pointer;
         }
 
-        .rightSection img {
-            width: 70%;
-            animation: oscillate 4s infinite ease-in-out;
-            transition: opacity 0.3s ease;
+        .rightSection {
+            height: 64%;
+            border-radius: 50%;
+            padding: 8px;
+            box-shadow: 0 0 50px #3500D3;
+            margin-left: 10rem;
+            position: relative;
+            top: -50px;
+
         }
 
-        @keyframes oscillate {
-            0% {
-                transform: translate(0, 0);
-            }
-
-            25% {
-                transform: translate(10px, 10px);
-            }
-
-            50% {
-                transform: translate(0, 20px);
-            }
-
-            75% {
-                transform: translate(-10px, 10px);
-            }
-
-            100% {
-                transform: translate(0, 0);
-            }
+        .rightSection img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
 
@@ -128,7 +126,7 @@
             border: 0;
             background-color: #9c97f1;
             height: 1.2px;
-            margin: 40px 84px;
+            margin: 40px 10%;
         }
 
         .purple {
@@ -255,15 +253,108 @@
             font-size: 8.8px;
         }
 
+        .image-section {
+            padding: 20px 10%;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-box {
+            width: 48%;
+            text-align: center;
+        }
+
+        .clickable-image {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            color: white;
+        }
+
+        .caption h3 {
+            color: #3500D3;
+        }
+
+        .caption p {
+            font-size: 0.9rem;
+            color: gray;
+        }
+
+        .skills-section {
+            padding: 20px 10%;
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills-box {
+            width: 45%;
+        }
+
+        .skills-box h2 {
+            margin-bottom: 15px;
+            color: #3500D3;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+
+        .skill-level {
+            font-size: 0.9rem;
+            color: gray;
+        }
+
+        .languages-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .languages-list li {
+            margin-top: 5px;
+        }
+
+        .separator {
+            width: 2px;
+            background-color: white;
+            margin: 0 15px;
+        }
+
         footer {
             background-color: #0e0e1a;
             /* height:233px; */
         }
 
         .footer>div {
-            width: 223px;
+            width: 323px;
         }
 
+        .footer-first{
+            font-size: 13px;
+        }
         .footer {
             display: flex;
             padding: 23px 122px;
@@ -274,7 +365,7 @@
             list-style: none;
         }
 
-        .footer ul li a{
+        .footer ul li a {
             text-decoration: none;
             list-style: none;
             color: #3500D3;
@@ -298,10 +389,11 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#internship">Internship</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="https://leetcode.com/nitish0307">LeetCode</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
                     <li><a href="https://www.linkedin.com/in/nitish-mishra-9a82b41a3/">Socials</a></li>
-                    <li><a href="#connect">Let's Connect</a></li>
+                    <li><a href="mailto:nitishm1803@gmail.com">Let's Connect</a></li>
+
                 </ul>
             </div>
         </nav>
@@ -315,16 +407,17 @@
                 <span id="element"></span>
 
                 <div class="buttons">
-                    <a href=" https://drive.google.com/file/d/1Db44Dfuvf7Cg4sRtkgTeYja3pbddMVbS/view?usp=sharing" target="_blank">
+                    <a href=" https://drive.google.com/file/d/1Db44Dfuvf7Cg4sRtkgTeYja3pbddMVbS/view?usp=sharing"
+                        target="_blank">
                         <button class="btn">Resume</button>
                     </a>
                     <a href=" https://github.com/nitish0307" target="_blank">
-                    <button class="btn">Github</button>
+                        <button class="btn">Github</button>
                     </a>
                 </div>
             </div>
             <div class="rightSection">
-                <img src="main.png" alt="img">
+                <img src="profilepic .png" alt="img">
             </div>
         </section>
         <hr>
@@ -332,7 +425,7 @@
             <span class="text-gray">About Me:</span>
             <h1>Education</h1>
 
-            <div class="box" >
+            <div class="box">
                 <div class="vertical">
                     <img class="img-top-grad" src="grad.png" alt="">
                     <div class="vertical-title">
@@ -405,20 +498,121 @@
                 </div>
             </div>
         </section>
+        <hr>
+        <section class="image-section" id="projects">
+            <span class="text-gray">What I have built:</span>
+            <h1>Projects</h1>
+            <br>
+            <div class="image-container">
+               
+                <div class="image-box">
+                    <a href="https://website-umber-gamma-46.vercel.app/" target="_blank">
+                        <img src="project1.png" alt="First Image" class="clickable-image">
+                    </a>
+                    <div class="caption">
+                        <h3>Exploreit</h3>
+                        <p>Website made for the comfort of the users and allowing them to
+                            book parties, trips, and wellness classes near them.</p>
+                    </div>
+                </div>
 
+                
+                <div class="image-box">
+                    <a href="https://adminastro.netlify.app/" target="_blank">
+                        <img src="project2.png" alt="Second Image" class="clickable-image">
+                    </a>
+                    <div class="caption">
+                        <h3>AdminAstro</h3>
+                        <p>A website to slove the day to day trouble of teachers and students.
+                            By giving them a window to manage the chaos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="skills-section" id="skills">
+            <span class="text-gray">What I have learned:</span>
+            <h1>Skills</h1>
+            <br>
+            <div class="container">
+               
+                <div class="skills-column">
+                    <h2>Technical Skills</h2>
+                    <ul class="skills-list">
+                        <li>
+                            <span class="skill-name">C++</span>
+                            <span class="skill-level">Proficiency: 80% (Intermediate)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-level">Proficiency: 90% (Advanced)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-level">Proficiency: 80% (Intermediate)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">Proficiency: 60% (Beginner)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Blender</span>
+                            <span class="skill-level">Proficiency: 65% (Beginner)</span>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="separator"></div>
+
+                
+                <div class="skills-column">
+                    <h2>Languages</h2>
+                    <ul class="languages-list">
+                        <li>Hindi (Fluent)</li>
+                        <li>Marathi (Fluent)</li>
+                        <li>English (Fluent)</li>
+                        <li>Spanish (Beginner)</li>
+                    </ul>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="skills-column">
+                    <h2>Communication Skills</h2>
+                    <ul class="skills-list">
+                        <li>
+                            <span class="skill-name">Public Speaking</span>
+                            <span class="skill-level">Proficiency: 70% (Intermediate)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Team Collaboration</span>
+                            <span class="skill-level">Proficiency: 85% (Advanced)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Active Listening</span>
+                            <span class="skill-level">Proficiency: 90% (Advanced)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Conflict Resolution</span>
+                            <span class="skill-level">Proficiency: 75% (Intermediate)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="footer" id="connect">
+        <div class="footer">
             <div class="footer-first">
-                <h3>Nitish's Portfolio</h3>
+                <!-- <h3>nitishm1803@gmail.com <br>
+                +91 8652185935</h3> -->
             </div>
             <div class="footer-second">
                 <h3>Socials</h3> <br>
                 <ul>
                     <li>Instagram</li>
-                    <li><a href = "https://www.linkedin.com/in/nitish-mishra-9a82b41a3/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://www.linkedin.com/in/nitish-mishra-9a82b41a3/" target="_blank">Linkedin</a></li>
                     <li>Twitter</li>
                 </ul>
             </div>
